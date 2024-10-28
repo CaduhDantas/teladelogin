@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #b2ff6a, #fcb64d);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#login{
+    background-color: rgba(245, 245, 245, 0.678);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+    
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+ #imagemini{
+    background-image: url(./imagens/imgini.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+ }
+
+    #formulario{
+        padding: 10px;
+        font-size: 15px;
+        display: block;
+    }
+
+    #formulario > h1{
+        padding-bottom: 10px;
+        padding-top: 5px;
+        font-size: 22px;
+    }
+ 
+    form > input[type=submit]{
+        display: block;
+        font-size: 1em;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background: linear-gradient(to right, #b2ff6a59, #fcb64d5b);
+        padding: 10px;
+        cursor: pointer;
+        padding-top: 10px;
+        margin-top: 5px;
+
+    }
+
+    form > input[type="submit"],
+    form > a.esqueci {
+        width: 70%; /* Largura dos botões */
+        margin-top: 10px; /* Espaçamento entre os botões */
+        text-align: center;
+    }
+  
+    form > input[type="submit"]:hover{
+        background: linear-gradient(to right, #b2ff6aa8, #fcb64da1);
+        border: 1px solid white;
+        transform: scale(1.03);
+        transition: transform 0.2s 0.1s;
+    }
+
+    #esqueci:hover{
+        background-color: transparent;
+        transform: scale(1.03);
+        transition: transform 0.2s 0.1s;
+    }
+
+    #esqueci{
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        width: 70%;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 8px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        background-color: whitesmoke;
+        
+    }
+
+  .campologin{
+    background-color: whitesmoke;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 4px 0;
+    text-align: left;
+  }
+
+ input{
+    padding-left: 3px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 96px);
+    background-color: transparent;
+    padding: 3px;
+ }
+    

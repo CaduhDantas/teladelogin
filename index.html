@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Área de Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+
+            <div id="imagemini">
+                <!-- Aqui tem uma foto :) -->
+            </div>
+
+            <div id="formulario">
+                <h1>Área de Login</h1>
+                <p>Olá! Estamos felizes em te ver novamente! Entre para acessar sua conta.</p>
+                
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campologin">
+                        <span class="material-symbols-outlined">person</span>
+                        <label for="ilogin">E-mail</label>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail aqui" autocomplete="email">
+                    </div>
+                    <div class="campologin">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueciasenha.html" id="esqueci">Esqueci a senha</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

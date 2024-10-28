@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+@charset "UTF-8";
+
+/* Layout para telas médias */
+@media screen and (min-width: 790px) and (max-width: 993px) {
+      
+    #login {
+        width: 80vw;
+        height: 380px;
+        display: flex;
+        flex-direction: row; /* Divide o espaço entre imagem e formulário */
+    }
+
+    #imagemini {
+        width: 30%;
+        height: 100%;
+    }
+
+    #formulario {
+        width: 70%;
+        padding: 20px;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form > input[type="submit"],
+    form > a.esqueci {
+        width: 80%; /* Alinha a largura dos botões */
+        margin-top: 10px; /* Espaçamento entre os botões */
+        text-align: center;
+    }
+}
+
+/* Layout para telas grandes */
+@media screen and (min-width: 992px) {
+    
+    #login {
+        width: 950px;
+        height: 450px;
+        display: flex;
+        flex-direction: row; /* Divide o espaço entre imagem e formulário */
+    }
+
+    #imagemini {
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario {
+        width: 50%;
+        padding: 20px;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formulario > h1{
+        padding-top: 12px;
+        padding-bottom: 16px;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    form > input[type="submit"],
+    form > a.esqueci {
+        width: 60%; /* Alinha a largura dos botões */
+        margin-top: 35px; /* Espaçamento entre os botões */
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 790px) {
+    form {
+        display: flex;
+        flex-direction: column; /* Alinha os filhos em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        justify-content: space-between; /* Espaçamento entre os itens */
+        
+    }
+}
